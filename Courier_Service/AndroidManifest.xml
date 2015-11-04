@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.courier_service"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.courier_service.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.courier_service.AddPackage"></activity>
+        <activity android:name="com.example.courier_service.Admin"></activity>
+        <activity android:name="com.example.courier_service.Display"></activity>
+        <activity android:name="com.example.courier_service.DisplayStatus"></activity>
+        <activity android:name="com.example.courier_service.DisplayUser"></activity>
+        <activity android:name="com.example.courier_service.RemovePackage"></activity>
+        <activity android:name="com.example.courier_service.RemoveUser"></activity>
+        <activity android:name="com.example.courier_service.signUp"></activity>
+        <activity android:name="com.example.courier_service.UpdatePackage"></activity>
+    </application>
+
+</manifest>
